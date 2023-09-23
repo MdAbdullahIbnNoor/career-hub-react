@@ -4,15 +4,15 @@ const Header = () => {
 
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/jobs">Jobs</NavLink></li>
+        <li><NavLink to="/job">Jobs</NavLink></li>
         <li><NavLink to="/statistics">Statistics</NavLink></li>
         <li><NavLink to="/applied">Applied Jobs</NavLink></li>
         <li><NavLink to="/blogs">Blogs</NavLink></li>
     </>
 
     return (
-        <div className="navbar bg-base-100 container mx-auto">
-            <div className="navbar-start">
+        <div className="flex bg-base-100 mx-auto justify-around py-4 container px-0">
+            <div className="">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -21,15 +21,15 @@ const Header = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <a className="btn btn-ghost normal-case text-3xl font-bold">CareerHub</a>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                 {links}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">Button</a>
+            <div className="">
+                <a className="btn text-white bg-gradient-to-r from-blue-400 to-indigo-600">Star Applying</a>
             </div>
         </div>
     )
