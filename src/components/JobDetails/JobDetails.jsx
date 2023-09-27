@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { saveJobApplication } from "../../utility/LocalStorage";
+import { Helmet } from "react-helmet-async";
 
 const JobDetails = () => {
 
@@ -24,6 +25,9 @@ const JobDetails = () => {
 
     return (
         <div className="my-20 max-w-screen-xl mx-auto">
+            <Helmet>
+                <title>Career | Job Details</title>
+            </Helmet>
             <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                 <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
                     <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
