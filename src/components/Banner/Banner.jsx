@@ -28,7 +28,7 @@ const Banner = () => {
             <div className="right-0 w-full max-w-xl px-4 mx-auto lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/3lg:max-w-full lg:absolute xl:px-0">
                 <img
                     className="object-contain w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none sm:h-96 lg:h-full"
-                    src="./assets/images/user.png"
+                    src="./images/user.png"
                     alt=""
                 />
             </div>

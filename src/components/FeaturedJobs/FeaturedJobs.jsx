@@ -27,7 +27,6 @@ const FeaturedJobs = () => {
                 </p>
             </div>
             <div className="grid max-w-screen-lg gap-10 lg:grid-cols-2">
-
                 {
                     jobs.slice(0, dataLength).map((job, idx) => <Job key={idx} job={job}></Job>)
                 }

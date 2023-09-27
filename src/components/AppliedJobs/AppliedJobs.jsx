@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import { getStoredJobApplication } from '../../utility/LocalStorage';
 import { CiLocationOn } from "react-icons/ci";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { Helmet } from 'react-helmet-async';
 
 const AppliedJobs = () => {
 
@@ -46,6 +47,9 @@ const AppliedJobs = () => {
 
   return (
     <section className="text-gray-600 body-font">
+      <Helmet>
+        <title>Career Hub | Applied Jobs</title>
+      </Helmet>
       <div className="container px-5 py-24 mx-auto flex flex-col justify-end">
         <div className="dropdown dropdown-bottom ml-full">
           <label tabIndex={0} className="btn w-32 btn-accent text-white m-2">Category</label>
